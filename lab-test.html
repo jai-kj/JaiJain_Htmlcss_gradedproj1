@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Shop | Book Lab Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header bg-primary">
+        <div class="container d-flex hr-justify-right sm-hr-justify-left sm-ml-2 py-3">
+            <h1 class="text-white xl mr-2">Pharmacy</h1>
+        </div>
+    </header>
+
+    <div class="navbar bg-secondary">
+        <div class="container h-100">
+            <nav class="h-100">
+                <ul class="nav-links d-flex rg h-100 hr-align-center">
+                    <li class="nav-link py-1"><a href="index.html" class="px-2 text-white">Home</a>
+                    </li>
+                    <li class="nav-link py-1 pos-rel"><a href="#" class="px-2 text-white">Our
+                            Medicines</a>
+                        <ul class="dropdown d-flex flex-v pos-abs">
+                            <li class="bg-light p-1"><a href="#" class="text-link">Fever</a></li>
+                            <li class="bg-light p-1"><a href="#" class="text-link">Muscle
+                                    Pains</a>
+                            </li>
+                            <li class="bg-light p-1"><a href="#" class="text-link">Cold
+                                    and Cough</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link py-1 pos-rel"><a href="#" class="px-2 text-white">Health
+                            Care</a>
+                        <ul class="dropdown d-flex flex-v pos-abs">
+                            <li class="bg-light p-1"><a href="#" class="text-link">Baby Care</a>
+                            </li>
+                            <li class="bg-light p-1"><a href="#" class="text-link">Skin Care</a>
+                            </li>
+                            <li class="bg-light p-1"><a href="#" class="text-link">Home Care</a>
+                            </li>
+                            <li class="bg-light p-1"><a href="#" class="text-link">Personal Care</a>
+                            </li>
+                            <li class="bg-light p-1"><a href="#" class="text-link">Pet Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link py-1"><a href="lab-test.html" class="px-2 text-white">Lab
+                            Test</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="lab-test-form-section my-5">
+        <div class="container">
+            <form action="">
+                <div class="lab-card bg-white d-grid grid-col-2">
+                    <div class="form-div px-4">
+
+                        <div class="d-grid my-4">
+                            <h2 class="md-lg">1. Your Contact Details</h2>
+                            <div class="contact-details d-grid grid-col-2 grid-gap-1 my-2">
+                                <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Full Name" required>
+                                <input type="text" name="patientID" id="patientID" class="form-control" placeholder="Patient Id if exists">
+                                <input type="number" name="contact" id="contact" class="form-control" placeholder="Contact Number" required>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email id" required>
+                            </div>
+                        </div>
+
+                        <div class="d-grid my-4">
+                            <h2 class="md-lg">2. Address</h2>
+                            <div class="contact-details d-grid grid-col-2 grid-gap-1 my-2">
+                                <input type="text" name="houseNumber" id="houseNumber" class="form-control" placeholder="H-No" required>
+                                <input type="text" name="street" id="street" class="form-control" placeholder="Street" required>
+                                <input type="text" name="area" id="area" class="form-control" placeholder="Area" required>
+                                <div></div>
+                                <div class="district">
+                                    <h4 class="rg my-2">District</h4>
+                                    <select name="district" id="district" class="select-control" required>
+                                        <option value="">Choose</option>
+                                        <option value="Ahmednagar">Ahmednagar</option>
+                                        <option value="Akola">Akola</option>
+                                        <option value="Amravati">Amravati</option>
+                                        <option value="Aurangabad">Aurangabad</option>
+                                        <option value="Beed">Beed</option>
+                                        <option value="Bhandara">Bhandara</option>
+                                        <option value="Buldhana">Buldhana</option>
+                                        <option value="Chandrapur">Chandrapur</option>
+                                        <option value="Dhule">Dhule</option>
+                                        <option value="Gadchiroli">Gadchiroli</option>
+                                        <option value="Gondia">Gondia</option>
+                                        <option value="Hingoli">Hingoli</option>
+                                        <option value="Jalgaon">Jalgaon</option>
+                                        <option value="Jalna">Jalna</option>
+                                        <option value="Kolhapur">Kolhapur</option>
+                                        <option value="Latur">Latur</option>
+                                        <option value="Mumbai City">Mumbai City</option>
+                                        <option value="Mumbai Suburban">Mumbai Suburban</option>
+                                        <option value="Nagpur">Nagpur</option>
+                                        <option value="Nanded">Nanded</option>
+                                        <option value="Nandurbar">Nandurbar</option>
+                                        <option value="Nashik">Nashik</option>
+                                        <option value="Osmanabad">Osmanabad</option>
+                                        <option value="Palghar">Palghar</option>
+                                        <option value="Parbhani">Parbhani</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Raigad">Raigad</option>
+                                        <option value="Ratnagiri">Ratnagiri</option>
+                                        <option value="Sangli">Sangli</option>
+                                        <option value="Satara">Satara</option>
+                                        <option value="Sindhudurg">Sindhudurg</option>
+                                        <option value="Solapur">Solapur</option>
+                                        <option value="Thane">Thane</option>
+                                        <option value="Wardha">Wardha</option>
+                                        <option value="Washim">Washim</option>
+                                        <option value="Yavatmal">Yavatmal</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid my-4">
+                            <h2 class="md-lg">3. Test Type</h2>
+                            <p class="text-secondary nm mt-3">Check atleast one box without fail</p>
+                            <div class="contact-details d-grid grid-col-3 grid-gap-1 my-2">
+                                <div class="mt-1">
+                                    <input type="checkbox" name="cbc" id="cbc" value="cbd" required>
+                                    <label for="cbc" class="rg ml-2">CBC</label>
+                                </div>
+                                <div class="mt-1">
+                                    <input type="checkbox" name="completeUrine" id="completeUrine" value="completeUrine" required>
+                                    <label for="completeUrine" class="rg ml-2">Complete
+                                        Urine</label>
+                                </div>
+                                <div class="mt-1">
+                                    <input type="checkbox" name="lipidProfile" id="lipidProfile" value="lipidProfile" required>
+                                    <label for="lipidProfile" class="rg ml-2">Lipid Profile</label>
+                                </div>
+                                <div class="mt-1 grid-col-span-2">
+                                    <input type="checkbox" name="TSH" id="TSH" value="TSH" required>
+                                    <label for="TSH" class="rg ml-2">Thyroid Stimulating Hormone
+                                        (TSH)</label>
+                                </div>
+                                <div class="mt-1">
+                                    <input type="checkbox" name="glucoseTest" id="glucoseTest" value="glucoseTest" required>
+                                    <label for="glucoseTest" class="rg ml-2">Glucose Test</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid my-4">
+                            <h2 class="md-lg">4. Report</h2>
+                            <p class="text-secondary nm mt-3">Do you want a hard copy of the report also?
+                            </p>
+                            <div class="contact-details d-grid grid-col-3 grid-gap-1 my-2">
+                                <div>
+                                    <input type="radio" name="hardCopy" value="hardCopy" required>
+                                    <label for="hardCopy-Yes" class="ml-2 rg"></label> Yes
+                                </div>
+                                <div>
+                                    <input type="radio" name="hardCopy" value="hardCopy">
+                                    <label for="hardCopy-No" class="ml-2 rg"></label> No
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid my-4">
+                            <h2 class="md-lg">5. Date & Time</h2>
+                            <div class="contact-details d-grid grid-col-2 grid-gap-1 my-2">
+                                <input type="date" name="date" id="date" class="form-control" placeholder="Select Appointment Date" required>
+                                <input type="time" name="time" id="time" class="form-control" placeholder="Select Appointment Time" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="image-div">
+                        <img src="images/Lab-Test/lab-test.jpg" alt="">
+                    </div>
+                </div>
+                <div class="d-grid grid-col-2">
+                    <div class="d-flex hr-justify-right">
+                        <button class="btn btn-lab-test text-white mr-3 my-3" type="button">Reset</button>
+                        <button class="btn btn-lab-test text-white mr-4 my-3" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer bg-black">
+        <div class="container d-flex hr-justify-center py-2">
+            <p class="nm text-white">
+                &copy copyright. Only for demonstration purposes.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
